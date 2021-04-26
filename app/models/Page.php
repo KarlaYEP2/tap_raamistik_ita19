@@ -12,25 +12,4 @@ class Page
     {
         $this->db = new Databases();
     }
-    public function addUser(){
-        $this->db->query('INSERT INTO users SET name=:name, email=:email, status=:status');
-        $this->db->bind('name', 'user2');
-        $this->db->bind('email', 'user2@localhost.loc');
-        $this->db->bind('status', 'admin');
-        $this->db->execute();
-    }
-    public function getOneUser(){
-        $this->db->query('SELECT * FROM users WHERE id=:id');
-        $this->db->bind('id', 1);
-        return $this->db->getOne();
-    }
-
-    public function getUsers(){
-        $this->db->query('SELECT * FROm users');
-        return $this->db->getAll();
-    }
-    public function usersCount(){
-        $this->getUsers();
-        return $this->db->rowCount();
-    }
 }
