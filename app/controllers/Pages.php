@@ -9,15 +9,20 @@ class Pages extends Controller
      */
     public function __construct()
     {
-        echo 'Pages class has been loaded<br>';
+      //  echo 'Pages class has been loaded<br>';
     }
 
     public function index(){
-        echo 'index method has been loaded<br>';
-        $this->view('index');
+        //echo 'index method has been loaded<br>';
+        $data = array(
+            'title' => 'THE PAGES PAGE :I',
+            'content' => 'PAGES HAS BEEN LOADED LIKE ALWAYS BY MVC'
+        );
+        $this->view('pages/index', $data);
     }
     public function about(){
-        echo 'about method has been loaded<br>';
-        $this->view('about');
+        //echo 'about method has been loaded<br>';
+        $data = array('content' => 'PAGES ABOUT HAS BEEN LOADED BY MVC');
+        $this->view('pages/about', $data);
     }
 }
