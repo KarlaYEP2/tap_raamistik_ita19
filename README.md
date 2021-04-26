@@ -8,5 +8,5 @@ Basic start to MVC framework
 
 ## Installation process
 - Install and run XAMPP
-- Clone respatory from Github to PHPStorm
+- Clone repository from Github to PHPStorm
 - Upload to localhost
