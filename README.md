@@ -6,7 +6,7 @@ Basic start to MVC framework
 ## Required software
 -[XAMPP](https://www.apachefriends.org/index.html)
 
-## Installation progress
+## Installation process
 - Install and run XAMPP
 - Clone respatory from Github to PHPStorm
 - Upload to localhost
